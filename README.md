@@ -24,7 +24,7 @@ Testing the C Program for the desired output.
 # PROGRAM:
 
 ## C Program that illustrate communication between two process using unnamed pipes using Linux API system calls
-~~~
+```
 #include<stdio.h>
 #include<stdlib.h>
 #include<sys/types.h> 
@@ -79,13 +79,19 @@ else
 n=read(fd,buff,2000); 
 write(wfd,buff,n); 
 }
-~~~
+```
+
+
+
+
 ## OUTPUT
 
-![322687750-e9242169-e755-465e-8920-f76311cec477](https://github.com/04Varsha/Linux-IPC-Pipes/assets/149035374/06a1ea90-65cb-4c36-abb6-526d317dab29)
+![image](https://github.com/user-attachments/assets/a7838e27-a2b2-40df-9a5a-2d9713e6e659)
+
 
 ## C Program that illustrate communication between two process using named pipes using Linux API system calls
-~~~
+
+```
 #include <stdlib.h>
 #include <stdio.h>
 #include <sys/types.h>
@@ -95,10 +101,13 @@ int res = mkfifo("/tmp/my_fifo", 0777);
 if (res == 0) printf("FIFO created\n");
 exit(EXIT_SUCCESS);
 }
-~~~
-## OUTPUT
+```
 
-![322687908-9bf64338-0839-4817-96e3-7af7b5be51e7](https://github.com/04Varsha/Linux-IPC-Pipes/assets/149035374/57ac78be-f304-4a74-ba73-73bc1fb7a3a3)
+
+
+## OUTPUT
+![image](https://github.com/user-attachments/assets/fc9856bf-ef88-4c67-a1ba-b5904acb9a74)
+
 
 # RESULT:
 The program is executed successfully.
